@@ -44,7 +44,7 @@ delay(20);
 }
 jj^=1;
 ```
-![image](https://github.com/milane331/FRIE/blob/master/6CEC108F-4D60-4258-8907-188484560277.jpeg)
+![image](https://github.com/milane331/FRIE/blob/master/97D453BF-BD01-452D-A5CC-9392F34BE223.jpeg)
 8顆LED依序由左至右一顆一顆亮起
 ```c++
 int jj=0,pwm=1,j=0;
