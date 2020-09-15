@@ -35,6 +35,20 @@ if(j>255)pwm=-1;//執行減滅
 if(j<0)pwm=1;//執行增亮
 delay(5);
 ```
+呼吸燈　ｐ2　此作法在以後添加功能才不會有阻礙
+```c++
+int va=255 ; int x=-15;
+void setup() {
+pinMode(3,OUTPUT);
+
+}
+void loop() {
+if(va <=0 || va>=255) x=-x;
+analogWrite(3,va);
+delay(20);
+va=va-x;
+}
+```
 跑馬燈
 ```c++
 void loop() {
