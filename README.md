@@ -29,11 +29,11 @@ jj^=1;//jj做互斥或 ex jj=1 和 1 互斥或 =0 所以不亮
 
 呼吸燈   analogWrite類比輸出
 ```c++
-/*for(int i=2;i<6;i++)analogWrite(i,j);
+for(int i=2;i<6;i++)analogWrite(i,j);
 j+=pwm;
 if(j>255)pwm=-1;//執行減滅
 if(j<0)pwm=1;//執行增亮
-delay(5);*/
+delay(5);
 ```
 跑馬燈
 ```c++
