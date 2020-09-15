@@ -44,3 +44,24 @@ delay(20);
 }
 jj^=1;
 ```
+
+8顆LED依序由左至右一顆一顆亮起
+```c++
+int jj=0,pwm=1,j=0;
+ byte ledpin[8]={2,3,4,5,6,7,8,9};
+void setup() {
+for(int i=2;i<10;i++)pinMode(i,OUTPUT);
+for(int i=2;i<10;i++)digitalWrite(i,1);
+}
+
+void loop() 
+{
+  for(int i=0;i<8;i++)
+  {
+    digitalWrite(ledpin[i],0);
+    delay(500);
+    digitalWrite(ledpin[i],1);
+  }
+jj^=1;
+}
+```
