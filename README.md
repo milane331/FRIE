@@ -44,6 +44,26 @@ delay(20);
 }
 jj^=1;
 ```
+四顆LED左至右亮
+```c++
+int jj=0,pwm=1,j=0;
+ byte ledpin[4]={2,3,4,5};
+void setup() {
+for(int i=2;i<6;i++)pinMode(i,OUTPUT);
+for(int i=2;i<6;i++)digitalWrite(i,1);
+}
+
+void loop() 
+{
+  for(int i=0;i<4;i++)
+  {
+    digitalWrite(ledpin[i],0);
+    delay(500);
+    digitalWrite(ledpin[i],1);
+  }
+jj^=1;
+}
+```
 ![image](https://github.com/milane331/FRIE/blob/master/97D453BF-BD01-452D-A5CC-9392F34BE223.jpeg)
 8顆LED依序由左至右一顆一顆亮起
 ```c++
