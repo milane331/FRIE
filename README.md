@@ -26,7 +26,7 @@ for(int i=2;i<6;i++)digitalWrite(i,jj);//2345以jj判定是否要亮
 delay(200);//延遲 200 毫秒
 jj^=1;//jj做互斥或 ex jj=1 和 1 互斥或 =0 所以不亮
 ```
-
+![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
 呼吸燈   analogWrite類比輸出
 ```c++
 for(int i=2;i<6;i++)analogWrite(i,j);
@@ -35,6 +35,7 @@ if(j>255)pwm=-1;//執行減滅
 if(j<0)pwm=1;//執行增亮
 delay(5);
 ```
+![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
 呼吸燈　ｐ2　此作法在以後添加功能才不會有阻礙
 ```c++
 int va=255 ; int x=-15;
@@ -49,6 +50,7 @@ delay(20);
 va=va-x;
 }
 ```
+![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
 跑馬燈
 ```c++
 void loop() {
@@ -58,6 +60,7 @@ delay(20);
 }
 jj^=1;
 ```
+![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
 四顆LED左至右亮
 ```c++
 int jj=0,pwm=1,j=0;
