@@ -13,7 +13,7 @@ delay(500);//延遲 為了能用肉眼看到按跟亮</br>
 在左邊有一個3v3那端是3伏特另一端如果=0則二極體導通LED恆亮</br>
 如果=1則無導通 LED不亮</br>
 
-new
+# new
 ```c++
 int jj=0,pwm=1,j=0;//給變數一個初值
 void setup() {
@@ -27,7 +27,7 @@ delay(200);//延遲 200 毫秒
 jj^=1;//jj做互斥或 ex jj=1 和 1 互斥或 =0 所以不亮
 ```
 ![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
-呼吸燈   analogWrite類比輸出
+# 呼吸燈   analogWrite類比輸出
 ```c++
 for(int i=2;i<6;i++)analogWrite(i,j);
 j+=pwm;
@@ -36,8 +36,8 @@ if(j<0)pwm=1;//執行增亮
 delay(5);
 ```
 ![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
-#呼吸燈　　
-##此作法在以後添加功能才不會有阻礙
+# 呼吸燈　　
+## 此作法在以後添加功能才不會有阻礙
 ```c++
 int va=255 ; int x=-15;
 void setup() {
@@ -52,7 +52,7 @@ va=va-x;
 }
 ```
 ![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
-#跑馬燈
+# 跑馬燈
 ```c++
 void loop() {
 for(int i=5;i>1;i--){
@@ -62,7 +62,7 @@ delay(20);
 jj^=1;
 ```
 ![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
-#四顆LED左至右亮
+# 四顆LED左至右亮
 ```c++
 int jj=0,pwm=1,j=0;
  byte ledpin[4]={2,3,4,5};
@@ -83,7 +83,7 @@ jj^=1;
 }
 ```
 ![image](https://github.com/milane331/FRIE/blob/master/97D453BF-BD01-452D-A5CC-9392F34BE223.jpeg)
-#8顆LED依序由左至右一顆一顆亮起
+# 8顆LED依序由左至右一顆一顆亮起
 ```c++
 int jj=0,pwm=1,j=0;
  byte ledpin[8]={2,3,4,5,6,7,8,9};
@@ -103,7 +103,7 @@ void loop()
 jj^=1;
 }
 ```
-#加分題 8顆LED依序由右至左一顆一顆亮起
+# 加分題 8顆LED依序由右至左一顆一顆亮起
 ```c++
  int jj=0,pwm=1,j=0;
  byte ledpin[8]={9,8,7,6,5,4,3,2};
@@ -131,7 +131,7 @@ if(digitalRead(2)==0)
 }
 ```
 ![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
-小黑豆 按下恆亮按第二下滅
+# 小黑豆 按下恆亮按第二下滅
 ```c++
 int a=1,jj=1;
 void setup() {
@@ -211,7 +211,7 @@ void loop()
     }
   }
 ```
-#加小黑豆控制 
+# 加小黑豆控制
 ```c++
 int va=255 ; int x=-15;
 int a=-1,jj=0,b=0;
