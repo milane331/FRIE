@@ -122,13 +122,16 @@ void loop()
 jj^=1;
 }
 ```
-
+![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
 ```c++
 if(digitalRead(2)==0)
 {
   digitalWrite(3,LOW);
 }
+```
+![image](https://github.com/milane331/FRIE/blob/master/73A9E4A5-7DCD-4CC8-9784-1F87FCF3F158.jpeg)
 小黑豆 按下恆亮按第二下滅
+```c++
 int a=1,jj=1;
 void setup() {
   // put your setup code here, to run once:
